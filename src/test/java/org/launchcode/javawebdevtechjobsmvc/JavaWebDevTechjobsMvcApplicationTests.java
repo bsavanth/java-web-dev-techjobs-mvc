@@ -10,4 +10,8 @@ class JavaWebDevTechjobsMvcApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	void tdd() {
+	}
+
 }

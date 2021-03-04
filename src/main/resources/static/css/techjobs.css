@@ -44,3 +44,13 @@ label {
 .centered {
     text-align: center;
 }
+
+.centre
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+h4
+{
+}

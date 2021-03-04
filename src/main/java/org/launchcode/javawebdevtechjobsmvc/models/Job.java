@@ -60,10 +60,10 @@ public class Job {
 
     // Custom equals and hashCode methods. Two Job objects are "equal" when their id fields match.
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Job)) return false;
-        Job job = (Job) o;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Job)) return false;
+        Job job = (Job) obj;
         return id == job.id;
     }
 

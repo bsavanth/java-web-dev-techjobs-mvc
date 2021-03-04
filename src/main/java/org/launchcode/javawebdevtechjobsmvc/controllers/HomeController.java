@@ -13,13 +13,13 @@ import java.util.HashMap;
 public class HomeController {
 
     @RequestMapping(value = "")
-    public String index(Model model) {
+    public String index(Model model1) {
 
         HashMap<String, String> actionChoices = new HashMap<>();
         actionChoices.put("search", "Search");
         actionChoices.put("list", "List");
 
-        model.addAttribute("actions", actionChoices);
+        model1.addAttribute("actions", actionChoices);
 
         return "index";
     }

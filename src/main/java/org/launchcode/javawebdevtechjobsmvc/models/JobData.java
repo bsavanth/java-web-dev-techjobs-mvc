@@ -17,7 +17,7 @@ import java.util.List;
 public class JobData {
 
     private static final String DATA_FILE = "job_data.csv";
-    private static boolean isDataLoaded = false;
+    private static boolean DataLoaded = false;
 
     private static ArrayList<Job> allJobs;
     private static ArrayList<Employer> allEmployers = new ArrayList<>();
@@ -139,7 +139,7 @@ public class JobData {
     private static void loadData() {
 
         // Only load data once
-        if (isDataLoaded) {
+        if (DataLoaded) {
             return;
         }
 
@@ -195,7 +195,7 @@ public class JobData {
                 allJobs.add(newJob);
             }
             // flag the data as loaded, so we don't do it twice
-            isDataLoaded = true;
+            DataLoaded = true;
 
         } catch (IOException e) {
             System.out.println("Failed to load job data");
